@@ -1,0 +1,22 @@
+
+<%- include("partials/header"); -%>
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name="postTitle">
+        <label>Post</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </form>
+<div class="" style="margin:5rem">
+
+</div>
+    <form class="" action="/delete" method="post" style="width:50%; margin:5rem">
+      <label for="inputPassword1">Password</label>
+      <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password" style="margin-bottom:2rem">
+      <button class="btn btn-danger" type="submit" name="button">Delete all posts</button>
+    </form>
+
+<%- include("partials/footer"); -%>
